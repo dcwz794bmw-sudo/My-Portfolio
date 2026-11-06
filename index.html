@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nour Eldin Amer — Software Engineer & Mobile Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              900: '#064e3b',
+              glow: 'rgba(16, 185, 129, 0.15)'
+            },
+            dark: {
+              900: '#090d16',
+              800: '#0f172a',
+              700: '#1e293b',
+              600: '#334155'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #090d16; color: #f8fafc; }
+    .code-font { font-family: 'Fira Code', monospace; }
+    .bg-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 24px 24px; }
+    .glow-effect { box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3); }
+  </style>
+</head>
+<body class="bg-dark-900 text-slate-100 antialiased selection:bg-brand-500 selection:text-dark-900 bg-grid">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-brand-400 group-hover:border-brand-500 transition-colors">
+          NA
+        </div>
+        <div>
+          <span class="font-bold text-lg text-white block">Nour Eldin Amer</span>
+          <span class="text-xs text-brand-400 code-font flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Available for Work
+          </span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-brand-400 transition-colors">About</a>
+        <a href="#stack" class="hover:text-brand-400 transition-colors">Tech Stack</a>
+        <a href="#work" class="hover:text-brand-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-brand-400 transition-colors">Contact</a>
+      </nav>
+      <a href="mailto:noourhussein@gmail.com" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-dark-900 bg-brand-400 hover:bg-brand-500 rounded-lg transition-colors">
+        Say Hello <i class="fa-solid me-1 fa-paper-plane"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="pt-36 pb-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-300 text-xs font-mono">
+          <i class="fa-brands fa-python text-brand-400"></i> Python & Mobile Engineer (2+ YOE)
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Nour Eldin Amer
+          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-200 text-3xl sm:text-5xl mt-2">
+            Software Engineer & Full-Stack Developer
+          </span>
+        </h1>
+        <p class="text-slate-400 text-lg leading-relaxed max-w-2xl">
+          Specialized in building scalable backends with <strong class="text-white">Python (FastAPI, Django)</strong> and crafting cross-platform mobile apps using <strong class="text-white">Flutter</strong>. Experienced in shipping production-ready web and mobile applications with focus on performance & clean architecture.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="mailto:noourhussein@gmail.com" class="px-6 py-3 font-semibold text-dark-900 bg-brand-400 hover:bg-brand-500 rounded-xl transition-all shadow-lg shadow-brand-500/20">
+            Get in Touch
+          </a>
+          <a href="#work" class="px-6 py-3 font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl transition-all">
+            View Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar & Terminal Card -->
+      <div class="lg:col-span-5">
+        <div class="relative bg-slate-800/50 border border-slate-700/80 rounded-2xl p-6 glow-effect backdrop-blur-sm">
+          <div class="flex items-center gap-4 border-b border-slate-700/60 pb-5">
+            <div class="w-16 h-16 rounded-full bg-brand-500/20 border-2 border-brand-400 overflow-hidden flex items-center justify-center font-bold text-2xl text-brand-400">
+              NA
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg">Nour Eldin Amer</h3>
+              <p class="text-xs text-slate-400 code-font">noourhussein@gmail.com</p>
+              <span class="inline-block mt-1 text-[11px] font-mono px-2 py-0.5 rounded bg-brand-900/60 text-brand-400 border border-brand-500/30">Cairo, Egypt · Remote</span>
+            </div>
+          </div>
+          <div class="mt-4 font-mono text-xs text-slate-300 space-y-2">
+            <p class="text-slate-500">// Nour's Stack Summary</p>
+            <p><span class="text-brand-400">const</span> engineer = {</p>
+            <p class="pl-4">experience: <span class="text-amber-300">'2+ Years'</span>,</p>
+            <p class="pl-4">core: [<span class="text-emerald-300">'Python'</span>, <span class="text-emerald-300">'Flutter'</span>, <span class="text-emerald-300">'FastAPI'</span>, <span class="text-emerald-300">'PostgreSQL'</span>],</p>
+            <p class="pl-4">status: <span class="text-brand-400">'Ready for opportunities'</span></p>
+            <p>};</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tech Stack -->
+  <section id="stack" class="py-20 bg-slate-900/50 border-y border-slate-800 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl font-bold text-white">Technical Expertise</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Technologies and tools I use to design, build, and deploy high-quality software.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Python & Backend -->
+        <div class="bg-dark-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-colors">
+          <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Python & Backend</h3>
+          <p class="text-xs text-slate-400 mb-4">Robust APIs, microservices, and database design.</p>
+          <div class="flex flex-wrap gap-2 text-xs code-font">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Python 3.12</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">FastAPI</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Django</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">PostgreSQL</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Redis</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Docker</span>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="bg-dark-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-colors">
+          <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Mobile Apps</h3>
+          <p class="text-xs text-slate-400 mb-4">Cross-platform iOS and Android applications.</p>
+          <div class="flex flex-wrap gap-2 text-xs code-font">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Flutter</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Dart</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">BLoC / Cubit</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Clean Architecture</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Firebase</span>
+          </div>
+        </div>
+
+        <!-- Web & Frontend -->
+        <div class="bg-dark-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-colors">
+          <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Frontend & Web</h3>
+          <p class="text-xs text-slate-400 mb-4">Modern responsive web dashboards and frontends.</p>
+          <div class="flex flex-wrap gap-2 text-xs code-font">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Next.js</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">React</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">TypeScript</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Tailwind CSS</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">REST / GraphQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 max-w-4xl mx-auto text-center space-y-8">
+    <h2 class="text-3xl font-bold text-white">Let's Work Together</h2>
+    <p class="text-slate-400 text-base max-w-xl mx-auto">Have an app idea, backend service, or full-stack project? I'm available for full-time remote roles and freelance projects.</p>
+
+    <div class="inline-flex flex-col sm:flex-row items-center gap-4 bg-slate-800/80 border border-slate-700 p-4 rounded-2xl">
+      <span class="code-font text-brand-400 text-lg font-semibold px-4">noourhussein@gmail.com</span>
+      <a href="mailto:noourhussein@gmail.com" class="px-6 py-2.5 font-semibold text-dark-900 bg-brand-400 hover:bg-brand-500 rounded-xl transition-colors">
+        Send Email
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 Nour Eldin Amer. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
